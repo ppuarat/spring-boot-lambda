@@ -23,7 +23,7 @@ Resources:
       PackageType: Image
     Metadata:
       DockerTag: java11-gradle-v1
-      DockerContext: ./spring-boot-lambda
+      DockerContext: ./
       Dockerfile: Dockerfile
 Outputs:
   SpringBootPetStoreApi:
