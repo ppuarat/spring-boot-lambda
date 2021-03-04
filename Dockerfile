@@ -16,6 +16,6 @@ RUN cp -r $SCRATCH_DIR/*/build/distributions/lambda-build/* .
 FROM public.ecr.aws/lambda/java:11
 COPY --from=build-image /var/task/META-INF ./
 COPY --from=build-image /var/task/lib/ ./lib
-COPY --from=build-image /var/task/com/amazonaws/serverless/sample/springboot2 ./com/amazonaws/serverless/sample/springboot2
+COPY --from=build-image /var/task/com/aws/serverless/springboot ./com/aws/serverless/springboot
 # Command can be overwritten by providing a different command in the template directly.
-CMD ["com.amazonaws.serverless.sample.springboot2.StreamLambdaHandler::handleRequest"]
+CMD ["com.aws.serverless.springboot.StreamLambdaHandler::handleRequest"]
