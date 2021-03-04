@@ -1,0 +1,4 @@
+.aws-sam/
+.gradle/
+spring-boot-lambda/build/
+spring-boot-lambda/.gradle/
